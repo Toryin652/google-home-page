@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <input v-model="searchString" type="text" @keyup.enter="search" />
+    <input class ="searchbox" v-model="searchString" type="text" @keyup.enter="search" />
     <button type="submit" @click="search">Search</button>
   </div>
 </template>
@@ -29,5 +29,18 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.searchbox {
+  margin-top: 250px;
+  height: 47px;
+  width: 583px;
+  border-radius: 40px;
+  border-width: 1px;
+  border-color: #dddddd;
+}
+
+button {
+
 }
 </style>
